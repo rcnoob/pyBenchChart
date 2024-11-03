@@ -6,7 +6,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("-b", "--benchmark", type=str,
 	help="benchmark json filename")
 ap.add_argument("-l", "--log", type=int,
-	help="logorithmic scaling: 1=yes, 0=no")
+	help="logarithmic scaling: 1=yes, 0=no")
 args = vars(ap.parse_args())
 
 with open(args["benchmark"], 'r') as file:
